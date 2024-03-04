@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mokshith Reddy</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mokshith Reddy</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="./asset/profile-pic.png" alt="Mokshith Reddy profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Mokshith Reddy</h1>
+          <p class="section__text__p2">Frontend Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./asset/Resume.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./asset/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/mokshith-reddy-436247259/'"
+            />
+            <img
+              src="./asset/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/MokshithReddy17'"
+            />
+          </div>
+        </div>
+         <img
+          src="./asset/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#about'"
+        />
+      </section>
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./asset/About-me.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./asset/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>EXCELLENCE</h3>
+                <p>Python, C languages<br> software Developer</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./asset/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.Sc. Bachelors Degree</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                "I am a skilled software developer with a robust
+                 proficiency in Python and C languages. With a proven track 
+                 record of creating efficient and scalable solutions, I excel 
+                 in leveraging the power of Python for rapid development and C
+                  for low-level programming. My expertise includes algorithm
+                   design, data structures, and a commitment to writing clean
+                    and maintainable code. I am passionate about tackling complex 
+                    challenges and continuously expanding my knowledge in the
+                     ever-evolving field of programming."
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./asset/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#skills'"
+        />
+      </section>
+      <section id="skills">
+       <div class="about-stats">
+        <p class="stat-title1">Explore</p>
+        <h1 class="stat-title">My Skills</h1>
+        <div class="progress-bars">
+            <div class="progress-bar">
+                <p class="prog-title">html5</p>
+                <div class="progress-con">
+                    <p class="prog-text">70%</p>
+                    <div class="progress">
+                        <span class="html"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <p class="prog-title">css3</p>
+                <div class="progress-con">
+                    <p class="prog-text">70%</p>
+                    <div class="progress">
+                        <span class="css"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <p class="prog-title">javascript</p>
+                <div class="progress-con">
+                    <p class="prog-text">80%</p>
+                    <div class="progress">
+                        <span class="js"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <p class="prog-title">C</p>
+                <div class="progress-con">
+                    <p class="prog-text">85%</p>
+                    <div class="progress">
+                        <span class="react"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <p class="prog-title">SQL</p>
+                <div class="progress-con">
+                    <p class="prog-text">75%</p>
+                    <div class="progress">
+                        <span class="node"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <p class="prog-title">Python</p>
+                <div class="progress-con">
+                    <p class="prog-text">90%</p>
+                    <div class="progress">
+                        <span class="python"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img
+          src="./asset/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+    </section>
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./asset/Project-1.jpg"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Weather-App</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/MokshithReddy17/Weather-app'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://mokshithreddy17.github.io/Weather-app/'"
+            >
+              Live 
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./asset/Project-2.jpeg"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Recipe-App</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/MokshithReddy17/Recipe-App'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://mokshithreddy17.github.io/Recipe-App/'"
+            >
+              Live 
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./asset/project-3.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./asset/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./asset/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:mokshithreddy492@gmail.com">mokshithreddy492@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./asset/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/mokshith-reddy-436247259/">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./asset/instagramlogo.jpeg"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.instagram.com/mokshith___reddy_/">Instagram</a></p>
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Mokshith Reddy. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"> </script>  
+</body>
+</html>

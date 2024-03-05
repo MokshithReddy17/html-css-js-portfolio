@@ -157,7 +157,7 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
-  margin-top: -110px;
+ 
 }
 
 .section__text p {
@@ -288,8 +288,7 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
-  margin-right: 100px;
-  margin-bottom: 120px;
+
 
 }
 

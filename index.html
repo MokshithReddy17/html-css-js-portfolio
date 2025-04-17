@@ -14,8 +14,10 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -30,24 +32,26 @@
           </div>
           <div class="menu-links">
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#certifications" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </div>
         </div>
       </nav>
       <section id="profile">
         <div class="section__pic-container">
-          <img src="./asset/profile-pic.png" alt="Mokshith Reddy profile picture" />
+          <img src="./asset/p5.png" alt="Mokshith Reddy profile picture" />
         </div>
         <div class="section__text">
           <p class="section__text__p1">Hello, I'm</p>
           <h1 class="title">Mokshith Reddy</h1>
-          <p class="section__text__p2">Frontend Developer</p>
+          <p class="section__text__p2">Aspiring Software Engineer | ML & Frontend Developer</p>
           <div class="btn-container">
             <button
               class="btn btn-color-2"
-              onclick="window.open('./asset/Resume.pdf')"
+              onclick="window.open('./asset/r.pdf')"
             >
               Download CV
             </button>
@@ -80,128 +84,211 @@
       <section id="about">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
+      
         <div class="section-container">
+          <!-- Left: Picture -->
           <div class="section__pic-container">
             <img
               src="./asset/About-me.jpg"
-              alt="Profile picture"
+              alt="Portrait of Mokshith Reddy"
               class="about-pic"
             />
           </div>
+      
+          <!-- Right: Cards + Bio -->
           <div class="about-details-container">
+            <!-- 3 Cards in a Row -->
             <div class="about-containers">
+              <!-- Excellence -->
               <div class="details-container">
                 <img
                   src="./asset/experience.png"
-                  alt="Experience icon"
+                  alt="Excellence icon"
                   class="icon"
                 />
                 <h3>EXCELLENCE</h3>
-                <p>Python, C languages<br> software Developer</p>
+                <ul>
+                  <li>Data Structures &amp; Algorithms</li>
+                  <li>Python • C • Java</li>
+                  <li>Machine Learning (scikit‑learn)</li>
+                  <li>HTML5 • CSS3 • JavaScript</li>
+                </ul>
               </div>
+      
+           
+              <!-- Skills -->
               <div class="details-container">
                 <img
-                  src="./asset/education.png"
-                  alt="Education icon"
+                  src="./asset/ach.png"
+                  alt="Achievements icon"
                   class="icon"
                 />
-                <h3>Education</h3>
-                <p>B.Sc. Bachelors Degree</p>
+                <h3>ACHIEVEMENTS</h3>
+                <ul>
+                  <li>GATE CSIT 2025 (AIR 7713)</li>
+                  <li>NPTEL Joy of Computing – 95%</li>
+                  <li>#314 – CodeChef Div 3</li>
+                  <li>#831 – LeetCode Weekly 435</li>
+                  <li>GirlScript – Rank 1671, 6 Badges</li>
+                </ul>
               </div>
             </div>
+        
+      
             <div class="text-container">
               <p>
-                "I am a skilled software developer with a robust
-                 proficiency in Python and C languages. With a proven track 
-                 record of creating efficient and scalable solutions, I excel 
-                 in leveraging the power of Python for rapid development and C
-                  for low-level programming. My expertise includes algorithm
-                   design, data structures, and a commitment to writing clean
-                    and maintainable code. I am passionate about tackling complex 
-                    challenges and continuously expanding my knowledge in the
-                     ever-evolving field of programming."
+                I’m a software developer passionate about problem‑solving with data structures &amp; algorithms. I build interactive web applications using HTML, CSS, and JavaScript, and I’m exploring machine learning models with Python libraries like scikit‑learn. I love writing clean, efficient code and tackling new challenges every day.
               </p>
             </div>
           </div>
         </div>
+        
+        <!-- Scroll Arrow -->
         <img
           src="./asset/arrow.png"
           alt="Arrow icon"
           class="icon arrow"
-          onclick="location.href='./#skills'"
+          onclick="location.href='./#education'"
         />
       </section>
+      <section id="education">
+        <p class="section__text__p1">My Journey So Far</p>
+        <h1 class="title">Education</h1>
+      
+        <div class="education-container">
+          <!-- B.Tech -->
+          <div class="edu-card">
+            <h3 class="degree">
+              B.Tech in Computer Science &amp; Engineering<br>
+              <small>(AI &amp; Machine Learning)</small>
+            </h3>
+            <p class="school">B V Raju Institute of Technology</p>
+            <p class="dates">2022 – Present</p>
+            <hr class="dashed" />
+            <p class="score">
+              CGPA: <span class="highlight">8.90</span><br>
+              <small>(as of Semester‑5)</small>
+            </p>
+          </div>
+      
+          <!-- Intermediate -->
+          <div class="edu-card">
+            <h3 class="degree">Telangana State Board of Intermediate Education</h3>
+            <p class="school">Narayana Junior College</p>
+            <p class="dates">2020 – 2022</p>
+            <hr class="dashed" />
+            <p class="score">Percentage: <span class="highlight">95.6%</span></p>
+          </div>
+      
+          <!-- SSC -->
+          <div class="edu-card">
+            <h3 class="degree">Secondary School Certificate (SSC)</h3>
+            <p class="school">R.B.V.R.R High School</p>
+            <p class="dates">2015 – 2020</p>
+            <hr class="dashed" />
+            <p class="score">GPA: <span class="highlight">10.0</span></p>
+          </div>
+         
+        </div>
+
+          <img
+            src="./asset/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#skills'"
+          />
+        </section>
+      
+      
+      
       <section id="skills">
-       <div class="about-stats">
-        <p class="stat-title1">Explore</p>
-        <h1 class="stat-title">My Skills</h1>
+        <div class="about-stats">
+          <p class="stat-title1">Explore</p>
+          <h1 class="stat-title">My Skills</h1>
         <div class="progress-bars">
-            <div class="progress-bar">
+          <div class="progress-bar">
                 <p class="prog-title">html5</p>
                 <div class="progress-con">
                     <p class="prog-text">70%</p>
                     <div class="progress">
                         <span class="html"></span>
+                      </div>
                     </div>
-                </div>
-            </div>
-            <div class="progress-bar">
+                  </div>
+                  <div class="progress-bar">
                 <p class="prog-title">css3</p>
                 <div class="progress-con">
-                    <p class="prog-text">70%</p>
-                    <div class="progress">
-                        <span class="css"></span>
+                  <p class="prog-text">70%</p>
+                  <div class="progress">
+                    <span class="css"></span>
                     </div>
                 </div>
-            </div>
-            <div class="progress-bar">
+              </div>
+              <div class="progress-bar">
                 <p class="prog-title">javascript</p>
                 <div class="progress-con">
-                    <p class="prog-text">80%</p>
-                    <div class="progress">
-                        <span class="js"></span>
-                    </div>
+                  <p class="prog-text">80%</p>
+                  <div class="progress">
+                    <span class="js"></span>
+                  </div>
                 </div>
-            </div>
-            <div class="progress-bar">
+              </div>
+              <div class="progress-bar">
                 <p class="prog-title">C</p>
                 <div class="progress-con">
                     <p class="prog-text">85%</p>
                     <div class="progress">
-                        <span class="react"></span>
+                      <span class="react"></span>
                     </div>
+                  </div>
                 </div>
-            </div>
             <div class="progress-bar">
+                <p class="prog-title">Java</p>
+                <div class="progress-con">
+                    <p class="prog-text">85%</p>
+                    <div class="progress">
+                      <span class="react"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress-bar">
+                <p class="prog-title">Machine Learning</p>
+                <div class="progress-con">
+                  <p class="prog-text">85%</p>
+                  <div class="progress">
+                    <span class="react"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-bar">
                 <p class="prog-title">SQL</p>
                 <div class="progress-con">
-                    <p class="prog-text">75%</p>
-                    <div class="progress">
-                        <span class="node"></span>
-                    </div>
+                  <p class="prog-text">75%</p>
+                  <div class="progress">
+                    <span class="node"></span>
+                  </div>
                 </div>
-            </div>
-            <div class="progress-bar">
+              </div>
+              <div class="progress-bar">
                 <p class="prog-title">Python</p>
                 <div class="progress-con">
-                    <p class="prog-text">90%</p>
-                    <div class="progress">
-                        <span class="python"></span>
+                  <p class="prog-text">95%</p>
+                  <div class="progress">
+                    <span class="python"></span>
                     </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <img
+          </div>
+          <img
           src="./asset/arrow.png"
           alt="Arrow icon"
           class="icon arrow"
           onclick="location.href='./#projects'"
-        />
-    </section>
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
+          />
+        </section>
+        <section id="projects">
+          <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
       <div class="about-containers">
@@ -256,24 +343,24 @@
         <div class="details-container color-container">
           <div class="article-container">
             <img
-              src="./asset/project-3.png"
+              src="./asset/chat.jpg"
               alt="Project 3"
               class="project-img"
             />
           </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <h2 class="experience-sub-title project-title"> iTalk Chat App</h2>
           <div class="btn-container">
             <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
+              onclick="location.href='https://github.com/MokshithReddy17/iTalk-Chatapplication'"
             >
               Github
             </button>
             <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
+              onclick="location.href='https://mokshithreddy17.github.io/iTalk-Chatapplication/'"
             >
-              Live Demo
+              Live
             </button>
           </div>
         </div>
@@ -283,9 +370,66 @@
       src="./asset/arrow.png"
       alt="Arrow icon"
       class="icon arrow"
+      onclick="location.href='./#certifications'"
+    />
+  </section>
+
+  <section id="certifications">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Certifications</h1>
+  
+    <div class="certifications-container">
+      <a href="https://www.credly.com/badges/fe958638-efba-4e08-8957-7cd03f1492e4/print" target="_blank" class="certification-card">
+        <h3>Python for Data Science</h3>
+        <p>by IBM | Issued: April 2023</p>
+      </a>
+      
+      <a href="https://drive.google.com/file/d/1LE46QDDbofFVGAtV9AEB_lDOH9WcD2PN/view" target="_blank" class="certification-card">
+        <h3>Joy of Computing Python (95%)</h3>
+        <p>by NPTEL | Issued: October 2023</p>
+      </a>
+      <a href="https://drive.google.com/file/d/1pzLTNCnanjsSJ2FRruGXcIbUiXAbMv6U/view" target="_blank" class="certification-card">
+        <h3>Cloud Security Alliance</h3>
+        <p>by CISCO | Issued: Dec 2023</p>
+      </a>
+  
+  
+      <a href="https://drive.google.com/file/d/1ZpQKA-rtXA-SzHwdQbTO-1D7Q_JQXv9H/view" target="_blank" class="certification-card">
+        <h3>Database Programming with SQL</h3>
+        <p>by ORACLE | Issued: November 2023</p>
+      </a>
+  
+      <a href="https://drive.google.com/file/d/10JnILWuxWHVKwWXa8cEVafIIbu3Nf3Hd/view" target="_blank" class="certification-card">
+        <h3>Programming in Java (71%)</h3>
+        <p>by NPTEL | Issued: April 2024</p>
+      </a>
+  
+      
+      <a href="https://drive.google.com/file/d/1N37a57ofL_pDdhB7Wij-O0rB84RTYDbN/view?usp=drivesdk" target="_blank" class="certification-card">
+        <h3>Soft Skills (77%)</h3>
+        <p>by NPTEL | Issued: October 2024</p>
+      </a>
+      
+      <a href="https://drive.google.com/file/d/1N-nhGYAqZIlHgo_usNBxiRoPrd10L7WC/view?usp=drivesdk" target="_blank" class="certification-card">
+        <h3>Mastering Data with Machine Learning</h3>
+        <p>by IBM | Issued: November 2024</p>
+      </a>
+      <a href="https://drive.google.com/file/d/1CACzmh1A_LFt4XKI2UWia5jMa2j2zVWh/view?usp=drive_link" target="_blank" class="certification-card">
+        <h3>Data Engineering Virtual Intership</h3>
+        <p>by AWS | Issued: february 2025</p>
+      </a>
+    </div>
+  
+    <img
+      src="./asset/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
       onclick="location.href='./#contact'"
     />
   </section>
+  
+  
+  
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
@@ -322,13 +466,15 @@
       <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <p>Copyright &#169; 2024 Mokshith Reddy. All Rights Reserved.</p>
+    <p>Copyright &#169; 2025 Mokshith Reddy. All Rights Reserved.</p>
   </footer>
   <script src="script.js"> </script>  
 </body>
